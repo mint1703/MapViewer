@@ -9,7 +9,6 @@
 #include <QMessageBox>
 #include <QTimer>
 #include <QCursor>
-#include <QApplication>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     setupUI();
@@ -111,6 +110,5 @@ void MainWindow::updateCursorPosition() {
         setWindowTitle(wgs84Text + " | " + utmText);
 
         update();
-        QApplication::processEvents();
     }
 }
